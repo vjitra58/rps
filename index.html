@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock|paper|scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c15a12c0da.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="app">
+        <div class="rules">RULES</div>
+        <div class="rules-list">
+            <h1>Game Rules</h1>
+            <ul id="rules">
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>    
+                <li>If both players lay down the same hand, each player lays down another hand</li>    
+            </ul>
+            <div id="cut"><i id="xmark" class="fa-solid fa-xmark"></i></div>
+        </div>
+
+        <div class="wrapper">
+            <div class="top">
+                <div class="left">
+                    <p>ROCK</p>
+                    <p>PAPER</p>
+                    <p>SCISSORS</p>
+                </div>
+                <div class ="scores">
+                    <div class="right">
+                        <p>Your Score</p>
+                        <h1>0</h1>
+                    </div>
+                    <div class="right">
+                        <p>Computer Score</p>
+                        <h1>0</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sign_selection">
+                <div class="line-one"></div>
+                <div class="line-two"></div>
+                <div class="line-three"></div>
+                <div id="rock" class="handsign rock rock-color">
+                    <i class="fa-solid fa-hand-rock"></i>
+                </div>
+                <div id="paper" class="handsign paper paper-color">
+                    <i class="fa-solid fa-hand-paper"></i>
+                </div>
+                <div id="scissors" class="handsign scissors scissors-color">
+                    <i class="fa-solid fa-hand-scissors"></i>
+                </div>
+            </div>
+
+            <div class="after_selection">
+                <div class="user">
+                    <p>YOU PICKED</p>
+                    <div class="handsign">
+                        <i class="fa-solid fa-hand-rock"></i>
+                    </div>
+                </div>
+                <div class="game_result">
+                    <h1>YOU WON</h1>
+                    <p>Against computer</p>
+                    <button>Play Again</button>
+                </div>
+                <div class="computer">
+                    <p>COMPUTER PICKED</p>
+                    <div class="handsign">      
+                        <i class="fa-solid fa-hand-rock"></i>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- <p>Its a Draw try Again</p> -->
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
